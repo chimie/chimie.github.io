@@ -1,0 +1,35 @@
+<!-- Organization Section -->
+{% if site.locale and site.locale != "" and site.locale != nil %}
+<section class="page-section organization-section" id="{{ site.data.sitetext[site.locale].organization.section | default: "organization" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].organization.title | default: "Organization" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].organization.text | default: "" }}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-left">
+        <div class="large text-black">{{ site.data.sitetext[site.locale].organization.body | markdownify }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+{% else %}
+<section class="page-section organization-section" id="{{ site.data.sitetext.organization.section | default: "organization" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.organization.title | default: "Organization" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext.organization.text | default: "" }}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-left">
+        <div class="large text-black">{{ site.data.sitetext.organization.body | markdownify }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End Organization Section -->

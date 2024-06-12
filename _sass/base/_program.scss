@@ -1,0 +1,108 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Helvetica', sans-serif; // 设置全局字体为 Helvetica
+  @include body-font;
+}
+
+p {
+  line-height: 1.55;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: 'Helvetica', sans-serif; // 设置标题字体为 Helvetica
+  @include heading-font;
+}
+
+.page-section {
+  padding: 100px 0;
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: 'Helvetica', sans-serif; // 设置副标题字体为 Helvetica
+    @include serif-font;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+// 高亮颜色自定义
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+// 专门针对 call 部分的样式
+.program-section {
+  background-color: $gray-100;
+  .text-left {
+    text-align: left;
+  }
+
+  .text-black {
+    color: #000;
+  }
+
+  .large {
+    font-size: 1.2em; // 明确设置更大的字体大小
+    font-family: 'Helvetica', sans-serif; // 设置字体为 Helvetica
+  }
+
+  ul {
+    margin: 20px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+    font-family: 'Helvetica', sans-serif; // 设置列表字体为 Helvetica
+  }
+
+  li {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  p {
+    text-align: justify; // 两端对齐
+    font-family: 'Helvetica', sans-serif; // 设置段落字体为 Helvetica
+  }
+}

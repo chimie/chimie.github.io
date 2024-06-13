@@ -1,7 +1,7 @@
-#after any changes to the Gemfile, execute bundle update!
 source "https://rubygems.org"
-gemspec
 
-# Delete the following lines if not on Windows: 
-# Performance-booster for watching directories on Windows
-gem "wdm", ">= 0.1.0" if Gem.win_platform?
+gem "github-pages", group: :jekyll_plugins
+
+# gem "jekyll", "~> 4.2.0"  # 移除单独指定的 jekyll 依赖
+gem "jekyll-agency"
+gem "webrick", "~> 1.7"  # 添加 webrick 依赖

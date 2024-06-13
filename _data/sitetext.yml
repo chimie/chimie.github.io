@@ -11,7 +11,7 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: "Welcome to<br> Workshop on Challenges in Internet-scale Multi-sensorial Interactions in Virtual Environments"
+    title: "Welcom to<br> Workshop on Challenges in Internet-scale Multi-sensorial Interactions in Virtual Environments"
     # body: "Tell me something"
     # text: "It's **Nice** To Meet You"
     # button: Tell Me More

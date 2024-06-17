@@ -52,6 +52,9 @@ en: &DEFAULT_EN
       - Rui-Xiao Zhang (UIUC)
       - Bo Chen (UIUC)
       - Xiaoyan Zhou (NJIT)
+      - Shiyi Wei (UT Dalas)
+      - Yu Xiang (UT Dalas)
+      - Jin Ryong Kim (UT Dalas)
     
   call:
     section: "call"

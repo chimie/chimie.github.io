@@ -39,6 +39,7 @@ en: &DEFAULT_EN
       **Program Chairs**
       - Klara Nahrstedt (UIUC)
       - Prabhakaran Balakrishnan (UT Dalas)
+      - Jacob Chakareski (NJIT)
 
       **Technical Program Committee**
       - Michael Zink (UMass)
@@ -50,6 +51,7 @@ en: &DEFAULT_EN
       - Spyridon Mastorakis (University of Nebraska Omaha)
       - Rui-Xiao Zhang (UIUC)
       - Bo Chen (UIUC)
+      - Xiaoyan Zhou (NJIT)
     
   call:
     section: "call"
